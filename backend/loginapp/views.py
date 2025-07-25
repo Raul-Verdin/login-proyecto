@@ -18,3 +18,6 @@ def login_view(request):
     
     # Si es GET, muestra una respuesta simple o de prueba
     return HttpResponse("Login endpoint (esperando POST)")
+
+def home_view(request):
+    return HttpResponse("¡Bienvenido a mi backend en AWS Elastic Beanstalk!")
