@@ -21,3 +21,6 @@ def login_view(request):
 
 def home_view(request):
     return HttpResponse("¡Bienvenido a mi backend en AWS Elastic Beanstalk!")
+
+def test_view(request):
+    return HttpResponse("Hola desde Django - test OK")
