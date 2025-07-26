@@ -7,7 +7,7 @@ function App() {
   const [message, setMessage] = useState('');
  
   const handleLogin = async () => {
-    const res = await fetch('http://localhost:8000/login/', {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/login/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
@@ -28,7 +28,6 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1>Hola, este es mi nuevo cambio</h1>
         <h3 className="mb-4 text-center">Iniciar Sesión</h3>
         <input
           className="form-control mb-3"

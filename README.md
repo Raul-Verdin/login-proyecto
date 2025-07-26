@@ -45,10 +45,10 @@ Despliegue (opcional):
 - source venv/bin/activate  # En Windows: venv\Scripts\activate
 - pip install -r requirements.txt
 
-# Migrar base de datos
+Migrar base de datos
 - python manage.py migrate
 
-# Correr el servidor
+Correr el servidor
 - python manage.py runserver
 - Backend disponible en: http://localhost:8000
 
